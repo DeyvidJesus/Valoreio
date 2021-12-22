@@ -10,3 +10,4 @@ Eu desenvolvi a landing page proposta, porém, tive a idéia de construir algo m
 
 Você pode acessar o projeto no link a seguir:
 
+[Landing Page - Valoreio](https://deyvidjesus.github.io/Valoreio/)
