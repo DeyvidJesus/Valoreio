@@ -8,6 +8,10 @@ Eu desenvolvi a landing page proposta, porém, tive a idéia de construir algo m
 
 ![Valoreio](https://user-images.githubusercontent.com/86028187/147103690-81839fa9-4c84-4391-964a-8304819b5881.png)
 
-Você pode acessar o projeto no link a seguir:
+<div align="center">
+
+## Você pode acessar o projeto no link a seguir:
 
 [Landing Page - Valoreio](https://deyvidjesus.github.io/Valoreio/)
+
+</div>
