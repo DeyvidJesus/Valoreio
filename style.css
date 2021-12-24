@@ -27,9 +27,17 @@ body{
     border-radius: 50px;
 }
 
-.header-nav{
+#botao-mobile{
+    display: none;
+    visibility: hidden;
+    background: transparent;
+    border: none;
+}
+
+#header-nav{
     display: flex;
     gap: 32px;
+    align-items: center;
 }
 
 .nav-item{
@@ -135,4 +143,99 @@ body{
     color: #48a709;
     text-align: center;
     font-size: 70px;
+}
+
+@media (max-width: 1024px){
+    #conteudo-principal-imagem{
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px){
+    #conteudo-principal-msg{
+        margin-left: 13%;
+    }
+
+    .conteudo-principal{
+        align-items: center;
+    }
+}
+
+@media (max-width: 425px){
+
+    #conteudo-principal-titulo{
+        font-size: 52px;
+    }
+
+    #conteudo-principal-msg{
+        font-size: 22px;
+        margin-left: 10%;
+    }
+
+    #conteudo-principal-imagem{
+        display: none;
+        visibility: hidden;
+    }
+
+    #conteudo-secundario-lista{
+        margin-left: 8%;
+    }
+
+    #header-nav{
+        display: none;
+        visibility: hidden;
+    }
+
+    #header-nav.active{
+        padding-top: 20px;
+        display: flex;
+        visibility: visible;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        top: 18%;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+        transition: .7s;
+        background: rgba(6, 46, 80, 0.836);
+    }
+
+    #botao-mobile{
+        visibility: visible;
+        display: flex;
+    }
+
+    #hamburguer{
+        border-top: 2px solid rgb(255, 255, 255);
+        width: 23px;
+    }
+
+    #hamburguer::after, #hamburguer::before{
+        content: "";
+        display: block;
+        width: 23px;
+        height: 2px;
+        background: rgb(255, 255, 255);
+        margin-top: 5px;
+    }
+
+    #botao-mobile.active #hamburguer{
+        border-top-color: transparent;
+        position: absolute;
+        top: 7%;
+        right: 22%;
+    }
+
+    #botao-mobile.active #hamburguer::before{
+        transform: rotate(135deg);
+        transition: .7s;
+        position: absolute;
+    }
+
+    #botao-mobile.active #hamburguer::after{
+        transform: rotate(-135deg);
+        transition: .7s;
+        position: absolute;
+    }
 }
